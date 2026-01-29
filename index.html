@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My Parents ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg1:#0f2027;
+      --bg2:#203a43;
+      --bg3:#2c5364;
+      --accent:#ffb703;
+      --soft:#fefae0;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+      min-height:100vh;
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+      color:var(--soft);
+      overflow-x:hidden;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:10;
+      background:rgba(0,0,0,0.35);
+      backdrop-filter:blur(10px);
+      padding:12px 20px;
+    }
+
+    nav div{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+    }
+
+    nav a{
+      color:var(--soft);
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{color:var(--accent);}
+
+    header{
+      text-align:center;
+      padding:140px 20px 60px;
+      position:relative;
+      z-index:2;
+    }
+
+    header h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.5rem,5vw,4rem);
+      margin-bottom:15px;
+    }
+
+    header p{
+      max-width:700px;
+      margin:auto;
+      opacity:0.9;
+    }
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:40px 20px;
+      position:relative;
+      z-index:2;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      border-radius:20px;
+      padding:30px;
+      margin-bottom:30px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.3);
+      transition:transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 30px 60px rgba(0,0,0,0.4);
+    }
+
+    .card h2{
+      font-family:'Playfair Display',serif;
+      color:var(--accent);
+      margin-bottom:15px;
+    }
+
+    .card p{line-height:1.8;}
+
+    .quote{
+      text-align:center;
+      font-family:'Playfair Display',serif;
+      font-size:clamp(1.4rem,3vw,2.2rem);
+      margin:60px 0;
+    }
+
+    /* Parent photo styles */
+    .parent-photo{
+      display:flex;
+      justify-content:center;
+      margin:20px 0 25px;
+    }
+
+    .parent-photo img{
+      width:180px;
+      height:180px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid var(--accent);
+      box-shadow:0 0 25px rgba(255,183,3,0.6);
+      transition:transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .parent-photo img:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 40px rgba(255,183,3,0.9);
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 20px 60px;
+      opacity:0.9;
+    }
+
+    .fade{
+      opacity:0;
+      transform:translateY(30px);
+      transition:all 0.8s ease;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* Floating hearts */
+    .heart{
+      position:fixed;
+      bottom:-20px;
+      color:rgba(255,183,3,0.6);
+      animation:floatUp linear infinite;
+      z-index:0;
+    }
+
+    @keyframes floatUp{
+      0%{transform:translateY(0);opacity:0;}
+      10%{opacity:1;}
+      100%{transform:translateY(-120vh);opacity:0;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <a href="#parents">My Parents</a>
+    <a href="#father">Father</a>
+    <a href="#mother">Mother</a>
+  </div>
+</nav>
+
+<header class="fade">
+  <h1>আমার বাবা-মায়ের উদ্দেশ্যে ❤️</h1>
+  <p>
+    This small webpage is a tribute to my parents—for their endless love, countless sacrifices, and unconditional support. They stood by me in my darkest moments and celebrated with me in my happiest ones. Their joys and sorrows have always mirrored mine, and this, I believe, is the essence of true parenthood.
+  </p>
+</header>
+
+<section id="parents">
+  <div class="quote fade">“God cannot be everywhere, so He created parents.” ❤️</div>
+
+  <div class="card fade" id="father">
+    <h2>আমার বাবার জন্য</h2>
+    <div class="parent-photo">
+      <img src="images/father.jpg" alt="My Father">
+    </div>
+    <p style="text-align:center;font-style:italic;opacity:0.85;">My Power । My Strength । My World । My God</p>
+    <p style="margin-top:15px;">
+      To the world, he may just be a man, but to me, my father is a god. He is the guiding light in my darkest hours, the unshakable strength when life feels heavy, and the voice of wisdom that always shows me the right path. Every sacrifice he made, every sleepless night, every lesson he patiently taught—these are the treasures that shape who I am. I look at him, and I see not just a parent, but the embodiment of love, courage, and divinity. No words can ever capture the depth of my gratitude, for a child can never truly repay the endless devotion of a father. In my heart, he will always be my god, my hero, my eternal guide.
+    </p>
+  </div>
+
+  <div class="card fade" id="mother">
+    <h2>আমার মায়ের জন্য</h2>
+    <div class="parent-photo">
+      <img src="images/mother.jpg" alt="My Mother">
+    </div>
+    <p style="text-align:center;font-style:italic;opacity:0.85;">My World । My Warmth । My shelter ।</p>
+    <p style="margin-top:15px;">
+      To the world, she may be called a mother, but to me, she is nothing less than a goddess. She is the warmth in my coldest moments, the unwavering comfort when life feels heavy, and the gentle voice that teaches me love, patience, and resilience. Every sacrifice she made, every tear she held back, every sleepless night—these are the gifts that have shaped my soul. I look at her, and I see not just a parent, but the embodiment of unconditional love, endless strength, and divine grace. No words can ever express the depth of my gratitude, for a child can never truly repay the infinite devotion of a mother. In my heart, she will always be my goddess, my guide, my sanctuary.Mom, your love shaped my soul. You felt my pain before I spoke, and your prayers protected me in silence. Everything gentle and kind in me exists because of you.
+    </p>
+  </div>
+    <p style="text-align:center;font-style:italic;opacity:0.85;">My world. My warmth. My forever.</p>
+    <p style="margin-top:15px;">
+      
+    </p>
+  </div>
+
+  <div class="card fade" id="lessons">
+    <h2>The lessons you gave me</h2>
+    <p>
+      You have given me more through your actions than words ever could. These lessons guide me every day to walk the right path.
+    </p>
+    <ul style="margin-top:20px;line-height:2;">
+      <li>🌱 The higher I rise, the more humble I must remain</li>
+      <li>🔥 No matter the hardships in life, never give up</li>
+      <li>🤝 Learn to respect every person</li>
+      <li>❤️ Keep kindness, love, and humanity alive</li>
+      <li>⭐ Learn to have faith in yourself</li>
+      <li>🙏 Always give family the utmost importance</li>
+      <li>The life, light, and values you have taught me cannot be captured in words. No child can ever repay the love, sacrifices, and devotion of their parents. Your debt cannot be cleared—it can only be carried in the heart forever.</li>
+
+    </ul>
+    <p style="margin-top:20px;;opacity:0.85;">
+      আমার মধ্যে যা কিছু ভালো, তার সবটাই তোমাদের শেখানো।
+    </p>
+  </div>
+
+  <div class="card fade">
+    <h2>A Pledge</h2>
+      <p>
+        I promise to always remember the sacrifices you made for me. I may stumble and take time, but I will never stop trying to become someone you can be proud of. I promise to respect you, support you in your hard times, and care for you the way you cared for me when I knew nothing about life. No matter how far I go, my roots will always be you.
+      </p>
+    </div>
+</section>
+
+<footer class="fade">
+  Made with ❤️ by <strong>Anindya</strong><br>
+  Thank you for everything.
+</footer>
+
+<script>
+  // Floating hearts
+  function createHeart(){
+    const heart=document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML='❤';
+    heart.style.left=Math.random()*100+'vw';
+    heart.style.animationDuration=6+Math.random()*6+'s';
+    heart.style.fontSize=12+Math.random()*20+'px';
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),12000);
+  }
+  setInterval(createHeart,800);
+
+  // Fade-in observer
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('show');}
+    });
+  },{threshold:0.2});
+
+  document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html> 
